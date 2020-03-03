@@ -8,4 +8,9 @@ public class Direction
 	{
 		this.direction = direction;
 	}
+	
+	void turn()
+	{
+		direction = (direction + 1)%4; 
+	}
 }
