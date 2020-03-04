@@ -7,11 +7,7 @@ public class robot extends robotStatique
 		super(position, direction);
 	}
 	
-	public void tourne()
-	{
-		direction.turn();
-	}
-	
+	@Override
 	public void avance()
 	{
 		if(direction.direction == 0)
