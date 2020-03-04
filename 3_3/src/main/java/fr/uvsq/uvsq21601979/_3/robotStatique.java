@@ -1,15 +1,21 @@
 package fr.uvsq.uvsq21601979._3;
 
-public class robotStatique extends robot
+public class robotStatique
 {
-	robotStatique(Position position, Direction direction)
+	protected Position position;
+	protected Direction direction;
+	
+	public robotStatique(Position position, Direction direction)
 	{
-		super(position,direction);
+		this.position = position;
+		this.direction = direction;
 	}
 	
-	@Override
-	public void avance()
+	public void tourne()
 	{
-		System.out.println("le robot ne peut pas se déplacer");
+		direction.turn();
 	}
+	
+	public void avance()
+	{}
 }

@@ -1,14 +1,10 @@
 package fr.uvsq.uvsq21601979._3;
 
-public class robot
-{
-	private Position position;
-	private Direction direction;
-	
+public class robot extends robotStatique
+{	
 	public robot(Position position, Direction direction)
 	{
-		this.position = position;
-		this.direction = direction;
+		super(position, direction);
 	}
 	
 	public void tourne()
